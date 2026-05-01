@@ -25,13 +25,28 @@ This project compares four machine learning classifiers to predict whether a pat
 - **Clean UI** — built with Streamlit for a fast, interactive experience
 
 ---
+## 🧩 Hybrid Approach (ML + Expert System)
+
+In addition to machine learning models, a rule-based expert system was implemented using domain-inspired medical logic.
+
+This allows comparison between:
+- Human-like reasoning (Expert System)
+- Data-driven learning (Machine Learning)
+
+### Expert Rules
+
+- If Glucose > 125 → Diabetic  
+- If BMI > 35 → Diabetic  
+- If BMI > 30 and Age > 35 → Diabetic  
+
+📌 This highlights the trade-off between interpretability and predictive power.
 
 ## 🗂️ Project Structure
 
 ```
 diabetes-prediction/
 │
-├── Appp.py                        # Streamlit web application
+├── App.py                        # Streamlit web application
 ├── Training.csv                   # PIMA Indians Diabetes Dataset
 ├── medians.pkl                    # Saved feature medians for imputation
 │
@@ -40,7 +55,7 @@ diabetes-prediction/
 ├── logistic_regression_model.pkl  # Trained Logistic Regression
 ├── gboost_model.pkl               # Trained XGBoost Classifier
 │
-├── ml_es__4_.ipynb                # Full training notebook (EDA + modeling)
+├── ML__expert_system.ipynb                # Full training notebook (EDA + modeling)
 └── README.md
 ```
 
