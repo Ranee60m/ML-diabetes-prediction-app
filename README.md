@@ -95,7 +95,7 @@ Zero values in the following clinical columns are biologically implausible and a
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/diabetes-prediction.git
+git clone https://github.com/Ranee60m/ML-diabetes-prediction-app.git
 cd diabetes-prediction
 ```
 
